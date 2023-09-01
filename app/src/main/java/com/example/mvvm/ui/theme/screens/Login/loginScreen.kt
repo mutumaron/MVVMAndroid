@@ -1,6 +1,7 @@
 package com.example.mvvm.ui.theme.screens.Login
 
 
+import androidx.compose.animation.VectorConverter
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -37,10 +38,12 @@ fun loginScreen(navController: NavHostController){
     var name by remember { mutableStateOf(TextFieldValue("")) }
     var email by remember{ mutableStateOf(TextFieldValue("")) }
     var pass by remember{ mutableStateOf(TextFieldValue("")) }
-    Column(modifier = Modifier.fillMaxSize(),
+    Column(modifier = Modifier
+        .background(Color.DarkGray)
+        .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally) {
         Text(text = "Login here",
-            color = Color.DarkGray,
+            color = Color.White,
             fontSize = 45.sp,
             fontFamily = FontFamily.Serif
         )
@@ -48,10 +51,10 @@ fun loginScreen(navController: NavHostController){
         OutlinedTextField(value = name,
             modifier = Modifier
 //                .fillMaxWidth()
-                .background(Color.LightGray)
+                .background(Color.DarkGray)
                 .padding(16.dp),
             label = { Text(text = "Name",
-                color = Color.Black,
+                color = Color.White,
                 fontSize = 30.sp
             )},
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
@@ -64,10 +67,10 @@ fun loginScreen(navController: NavHostController){
         OutlinedTextField(value = email,
             modifier = Modifier
 //                .fillMaxWidth()
-                .background(Color.LightGray)
+                .background(Color.DarkGray)
                 .padding(16.dp),
             label = { Text(text = "Email",
-                color = Color.Black,
+                color = Color.White,
                 fontSize = 30.sp
             )},
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
@@ -78,10 +81,10 @@ fun loginScreen(navController: NavHostController){
         OutlinedTextField(value = pass,
             modifier = Modifier
 //                .fillMaxWidth()
-                .background(Color.LightGray)
+                .background(Color.DarkGray)
                 .padding(16.dp),
             label = { Text(text = "Password",
-                color = Color.Black,
+                color = Color.White,
                 fontSize = 30.sp
             )},
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
