@@ -28,6 +28,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
+import com.example.mvvm.navigation.ROUT_HOME
+import com.example.mvvm.navigation.ROUT_LOGIN
+import com.example.mvvm.navigation.ROUT_REGISTER
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -73,32 +76,36 @@ fun registerScreen(navController: NavHostController){
             onValueChange = {pass=it})
 
         Spacer(modifier = Modifier.height(35.dp))
-        Button(onClick = { /*TODO*/},
+        Button(onClick = {
+            navController.navigate(ROUT_LOGIN)
+        },
             colors = ButtonDefaults.buttonColors(),
             shape = CircleShape
 
         ) {
-            Text(text = "Register Here",
+            Text(text = "Click to Register",
                 fontSize = 20.sp,
                 fontFamily = FontFamily.Serif
                 )
 
 
         }
-        Spacer(modifier = Modifier.height(30.dp))
-        Button(onClick = { /*TODO*/},
-            colors = ButtonDefaults.buttonColors(),
-            shape = CircleShape
+//        Spacer(modifier = Modifier.height(30.dp))
+//        Button(onClick = {
+//            navController.navigate(ROUT_HOME)
+//        },
+//            colors = ButtonDefaults.buttonColors(),
+//            shape = CircleShape
+//
+//        ) {
+//            Text(text = "Enter our First page",
+//                fontSize = 20.sp,
+//                fontFamily = FontFamily.Serif
+//                )
 
-        ) {
-            Text(text = "Enter our First page",
-                fontSize = 20.sp,
-                fontFamily = FontFamily.Serif
-                )
 
 
-
-        }
+//        }
 
     }
 

@@ -29,6 +29,7 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import com.example.mvvm.navigation.ROUT_HOME
 import com.example.mvvm.navigation.ROUT_LOGIN
 import com.example.mvvm.navigation.ROUT_REGISTER
 
@@ -124,13 +125,13 @@ fun loginScreen(navController: NavHostController){
 
         Spacer(modifier = Modifier.height(30.dp))
         Button(onClick = {
-            navController.navigate(ROUT_LOGIN)
+            navController.navigate(ROUT_HOME)
         },
             colors = ButtonDefaults.buttonColors(),
             shape = CircleShape
 
         ) {
-            Text(text = "Have Account? Login here",
+            Text(text = "Click to Login",
                 fontSize = 20.sp,
                 fontFamily = FontFamily.Serif
                 )
