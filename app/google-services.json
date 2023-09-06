@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "664445031197",
+    "project_id": "mvvm-1346e",
+    "storage_bucket": "mvvm-1346e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664445031197:android:d818b6f31d46837c4cc7f4",
+        "android_client_info": {
+          "package_name": "com.example.mvvm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664445031197-7fn22b508ahoe7ve6dfn96m1524giojo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2ZupBbq554Aj2lnbi-zhFLgdkuDtPWpc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664445031197-7fn22b508ahoe7ve6dfn96m1524giojo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
