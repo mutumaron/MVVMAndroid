@@ -1,5 +1,9 @@
 package com.example.mvvm.navigation
 
-const val ROUT_HOME = "home"
-const val ROUT_LOGIN = "login"
-const val ROUT_REGISTER = "register"
+const val ROUTE_LOGIN="login"
+const val ROUTE_REGISTER="register"
+const val ROUTE_ABOUT="about"
+const val ROUTE_HOME="home"
+const val ROUTE_ADD_PRODUCT="addproducts"
+const val ROUTE_VIEW_PRODUCT="viewproducts"
+const val ROUTE_UPDATE_PRODUCT="updateproducts"

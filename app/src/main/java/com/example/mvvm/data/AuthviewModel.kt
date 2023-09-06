@@ -1,11 +1,10 @@
 
-package com.example.firebaseauth.data
+package com.example.mvvm.data
 
 import android.content.Context
 import android.widget.Toast
 import androidx.navigation.NavHostController
-import com.example.firebaseauth.navigation.ROUTE_LOGIN
-import com.example.firebaseauth.navigation.ROUTE_REGISTER
+import com.example.mvvm.navigation.ROUTE_LOGIN
 import com.google.firebase.auth.FirebaseAuth
 
 class AuthViewModel(var navController:NavHostController,var context:Context){
